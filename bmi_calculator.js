@@ -1,15 +1,15 @@
 function calculateBMI(weight, height) {
-  height = height / 100;
+  height = height / 100; //arrange
 
-  var bmi = weight / (height * height);
+  var bmi = weight / (height * height); //arrange
 
-  bmi = bmi.toFixed(1);
-  return bmi;
+  bmi = bmi.toFixed(1); //act
+  return bmi; // assert
 }
 
-var weight = 70;
-var height = 170;
-var bmi = calculateBMI(weight, height);
-console.log("Your BMI is: " + bmi);
+var weight = 70; //arrange
+var height = 170; //arrange
+var bmi = calculateBMI(weight, height); //act
+console.log("Your BMI is: " + bmi); // assert
 
-calculateBMI(80, 160);
+calculateBMI(80, 160); //assert
